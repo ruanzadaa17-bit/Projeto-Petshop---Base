@@ -169,3 +169,121 @@ font-size: 1.1rem;
 padding: 0 20px 25px;
 color: var(--escuro);
 }
+
+/* GALERIA */
+.galeria{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 16px;
+}
+
+.galeria img{
+height: 170px;
+object-fit: cover;
+border-radius: var(--radius);
+box-shadow: var(--sombra);
+transition: 0.4s;
+}
+
+.galeria img:hover {
+transform: scale(1.05);
+}
+
+/* FORM */
+form{
+max-width: 700px;
+margin: auto;
+background: var(--claro);
+padding: 40px;
+border-radius: 25px;
+box-shadow: var(--sombra);
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+input, textarea{
+pad: 18px;
+border: 2px solid #e2e8f0;
+border-radius: 12px;
+font-size: 16px;
+}
+
+input:focus, textarea:focus{
+outline: none;
+border-color: var(--primaria);
+}
+
+button{
+padding: 18px;
+background: var(--primaria);
+color: var(--claro);
+border: none;
+border-radius: 12px;
+font-size: 18px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.4s;
+}
+
+button:hover {
+background:
+ #025985;
+}
+/* RODAPÉ */
+footer{
+background: var(--escuro);
+color: var(--claro);
+text-align: center;
+padding: 50px 20px;
+margin-top: 60px;
+}
+
+/* MAPA */
+iframe{
+width: 100%;
+height: 450px;
+border: none;
+border-radius: 25px;
+box-shadow: var(--sombra);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+#menu-btn {
+display: block;
+}
+
+nav{
+display: none;
+position: absolute;
+top: 85px;
+right: 20px;
+flex-direction: column;
+background: var(--claro);
+padding: 25px;
+border-radius: 20px;
+box-shadow: var(--sombra);
+}
+nav.ativo{
+display: flex;
+}
+.hero h1 {
+font-size: 38px;
+}
+.hero p{
+font-size: 18px;
+}
+h2 {
+font-size: 24px;
+}
+.galeria{
+grid-template-columns: 1fr;
+justify-content: center;
+}
+}
+/* RESPONSIVIDADE - TABLET */
+@media (min-width: 768px)and (max-width: 425px) {
+
+}
