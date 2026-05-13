@@ -39,10 +39,10 @@ justify-content: space-between;
 align-items: center;
 
 padding: 20px 8%;
-background: rgba(255, 255, 255, 0.75);
+background: rgba(198, 176, 176, 0.75);
 backdrop-filter: blur(20px);
 -webkit-backdrop-filter: blur(20px);
-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8)
+box-shadow: 0 2px 20px rgba(203, 131, 188, 0.8)
 }
 .logo{
 
@@ -233,7 +233,7 @@ background:
 }
 /* RODAPÉ */
 footer{
-background: var(--escuro);
+background: #754b7a;
 color: var(--claro);
 text-align: center;
 padding: 50px 20px;
@@ -285,5 +285,27 @@ justify-content: center;
 }
 /* RESPONSIVIDADE - TABLET */
 @media (min-width: 768px)and (max-width: 425px) {
+
+}
+.instagram {
+color: var(--claro);
+}
+/* PRODUTOS */
+.preco {
+  display: block;
+  padding: 0 20px;
+  margin-bottom: 20px;
+
+  color: var(--secundaria);
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card button {
+  margin: 0 20px 20px;
+}
+
+.sobre {
 
 }
