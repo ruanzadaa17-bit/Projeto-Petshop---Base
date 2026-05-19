@@ -3,7 +3,7 @@
 --secundaria: #f97316;
 --escuro: #0f172a;
 --claro: #ffffff;
--texto: #334155;
+--texto: #334155;
 --sombra: 0 8px 30px rgba(0, 0, 0, 0.2);
 --radius: 20px;
 }
@@ -39,10 +39,10 @@ justify-content: space-between;
 align-items: center;
 
 padding: 20px 8%;
-background: rgba(198, 176, 176, 0.75);
+background: rgba(255, 255, 255, 0.75);
 backdrop-filter: blur(20px);
 -webkit-backdrop-filter: blur(20px);
-box-shadow: 0 2px 20px rgba(203, 131, 188, 0.8)
+box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8)
 }
 .logo{
 
@@ -61,7 +61,7 @@ transition: 0.3s;
 }
 
 nav a:hover {
-color: var(--secundaria)
+color: #D4AF37;
 }
 
 #menu-btn{
@@ -105,7 +105,7 @@ margin-bottom: 30px;
 
 .btn{
 display: inline-block;
-background: var(--secundaria);
+background: #2b9950;
 padding: 18px 35px;
 border-radius: 50px;
 text-decoration: none;
@@ -161,7 +161,7 @@ object-fit: cover;
 
 .card h3{
 padding: 20px 20px 10px;
-color: var(--primaria);
+color: #D4AF37;
 font-size: 1.1rem;
 }
 
@@ -212,12 +212,12 @@ font-size: 16px;
 
 input:focus, textarea:focus{
 outline: none;
-border-color: var(--primaria);
+border-color:#D4AF37 ;
 }
 
 button{
 padding: 18px;
-background: var(--primaria);
+background: #2b9950;
 color: var(--claro);
 border: none;
 border-radius: 12px;
@@ -229,11 +229,11 @@ transition: 0.4s;
 
 button:hover {
 background:
- #025985;
+ #D4AF37;
 }
 /* RODAPÉ */
 footer{
-background: #754b7a;
+background: #2b9950;
 color: var(--claro);
 text-align: center;
 padding: 50px 20px;
@@ -296,7 +296,7 @@ color: var(--claro);
   padding: 0 20px;
   margin-bottom: 20px;
 
-  color: var(--secundaria);
+  color: #2b9950;
 
   font-size: 22px;
   font-weight: 700;
@@ -308,4 +308,104 @@ color: var(--claro);
 
 .sobre {
 
+}
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode {
+  color: #f5f5f5;
+
+  background:
+  linear-gradient(rgba(18,18,18,0.95), rgba(18,18,18,0.95)),
+  url("../img/fundo.png");
+
+  background-attachment: fixed;
+  background-size: 500px;
+}
+
+/* HEADER */
+.dark-mode header {
+  background: rgba(4, 99, 7, 0.9);
+}
+
+/* LINKS */
+.dark-mode nav a {
+  color: white;
+}
+
+/* TITULOS */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode span {
+  color: #f5f5f5;
+}
+
+/* HERO */
+.dark-mode .hero {
+  background:
+  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url("../img/banner.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* CARDS */
+.dark-mode .card {
+  background: rgba(30, 30, 30, 0.95);
+}
+
+.dark-mode .card p {
+  color: rgba(4, 99, 7, 0.9);
+}
+
+/* FORMULARIO */
+.dark-mode form {
+  background: #1e1e1e;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background: #2a2a2a;
+  color: rgba(4, 99, 7, 0.9);
+  border: 1px solid #444;
+}
+
+/* FOOTER */
+.dark-mode footer {
+  background: #0a0a0a;
+}
+
+/* MENU MOBILE */
+.dark-mode nav.ativo {
+  background: #1e1e1e;
+}
+
+/* BOTÃO DARK MODE */
+#darkModeBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #D4AF37;
+  color: black;
+
+  cursor: pointer;
+  font-size: 18px;
+
+  transition: 0.3s;
+  z-index: 99999;
+}
+
+#darkModeBtn:hover {
+  transform: scale(1.1);
 }
